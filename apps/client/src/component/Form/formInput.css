@@ -1,0 +1,29 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none */
+}
+
+label{
+    font-size: 12px;
+    color: black;
+}
+
+span{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
